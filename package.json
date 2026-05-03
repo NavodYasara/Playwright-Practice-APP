@@ -8,7 +8,7 @@
   },
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "ng serve --port 4300",
     "pageObjects-chrome": "playwright test usePageobjects.spec.ts --project=chromium --reporter=line",
     "pageObjects-firefox": "playwright test usePageobjects.spec.ts --project=firefox --reporter=line"
   },

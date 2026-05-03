@@ -8,7 +8,6 @@ test.beforeEach("the first test", async ({ page }) => {
   await page.getByText("Form Layouts").click();
 });
 
-
 test("Using the grid", async ({ page }) => {
   // this locator means, the locator which has the id "inputEmail1" and the placeholder "Email"
   await page.locator('#inputEmail1[placeholder="Email"]').fill("saf@afs.com");
