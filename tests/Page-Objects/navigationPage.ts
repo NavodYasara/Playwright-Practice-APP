@@ -1,4 +1,4 @@
-import playwrightConfig, { Page, test } from "@playwright/test";
+import { Page, test } from "@playwright/test";
 
 export class NavigationPage {
   readonly page: Page;

@@ -1,8 +1,8 @@
 import { test, expect } from "@playwright/test";
-import { NavigationPage } from "../../Page-Objects/navigationPage";
+import { NavigationPage } from "../Page-Objects/navigationPage";
 
 test.beforeEach(async ({ page }) => {
-  await page.goto("http://localhost:4200/");
+  await page.goto("http://localhost:4300/");
 });
 
 test.describe("Form Layout Page", () => {
@@ -279,3 +279,4 @@ test.describe("Slider", () => {
     await tempGauge.click();
   });
 });
+
