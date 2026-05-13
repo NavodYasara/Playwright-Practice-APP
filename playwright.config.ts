@@ -15,7 +15,7 @@ export default defineConfig({
   reporter: [['html', { open: 'on-failure' }]],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
-    baseURL: 'http://localhost:4200/pages/iot-dashboard',
+    baseURL: 'http://localhost:4300/pages/iot-dashboard',
     headless: false,
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
@@ -57,7 +57,7 @@ export default defineConfig({
   /* Run your local dev server before starting the tests */
   webServer: {
     command: 'npm run start',
-    url: 'http://localhost:4200/',
+    url: 'http://localhost:4300/',
     reuseExistingServer: !process.env.CI,
   },
 });

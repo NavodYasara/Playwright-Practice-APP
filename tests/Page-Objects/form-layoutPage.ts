@@ -1,4 +1,4 @@
-import { test, Page } from "@playwright/test";
+import { Page } from "@playwright/test";
 
 export class FormLayoutPage {
   private page: Page;
@@ -22,5 +22,10 @@ export class FormLayoutPage {
     await usingGridForm.getByRole("button").click();
   }
 
+  async submitInlineForm(name: string, email: string) {
+    const inlineForm = this.page.locator("nb-card", { hasText: "Inline form" });
+    await inlineForm.getByPlaceholder("Jane Doe").fill(name);
+    await inlineForm.getByPlaceholder("Email").fill(email);
+    await inlineForm.getByRole("button", { name: "Submit" }).click();
+  }
 }
-

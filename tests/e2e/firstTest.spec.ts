@@ -1,7 +1,7 @@
 import { expect, test } from "@playwright/test";
 
 test.beforeEach(async ({ page }) => {
-  await page.goto("http://localhost:4200/");
+  await page.goto("http://localhost:4300/");
   await page.getByText("Forms").click();
   await page.getByText("Form Layouts").click();
 });
@@ -27,8 +27,11 @@ test("Find child element", async ({ page }) => {
   // give me the child element which has the text "Sign in"
   await page.locator("nb-card").getByRole("button", { name: "Sign in" }).first().click();
 
-  // give me the child element which has the data-testid "SignIn"
-  await page.getByTestId("SignIn").click();
+  // give me a child element by role and name directly
+  await page
+    .locator("nb-card", { hasText: "Using the Grid" })
+    .getByRole("button", { name: "Sign in" })
+    .click();
 
   // give me the child element which has the role "button" and is the 3rd child element
   await page.locator("nb-card").nth(2).getByRole("button").click();

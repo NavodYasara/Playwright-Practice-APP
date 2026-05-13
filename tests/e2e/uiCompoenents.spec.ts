@@ -200,11 +200,21 @@ test.describe("DatePicker", () => {
   test("Datepicker", async ({ page }) => {
     const calendarInputFiled = page.getByPlaceholder("Form Picker");
     await calendarInputFiled.click();
+    const currentMonthYear = (
+      await page.locator("nb-calendar-view-mode button").textContent()
+    )?.trim();
+    const [currentMonthLong, currentYear] = (currentMonthYear ?? "").split(" ");
+    const currentMonthShort = new Date(
+      `${currentMonthLong} 1, ${currentYear}`,
+    ).toLocaleString("en-US", { month: "short" });
+
     await page
       .locator("nb-calendar-day-cell:not(.bounding-month)")
       .getByText("1", { exact: true })
       .click();
-    await expect(calendarInputFiled).toHaveValue("Mar 1, 2026");
+    await expect(calendarInputFiled).toHaveValue(
+      `${currentMonthShort} 1, ${currentYear}`,
+    );
   });
 
   test("DatePickerByDateObject", async ({ page }) => {

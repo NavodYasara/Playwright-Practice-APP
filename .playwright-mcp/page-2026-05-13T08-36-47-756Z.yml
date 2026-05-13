@@ -1,0 +1,215 @@
+- generic [ref=e7]:
+  - navigation [ref=e9]:
+    - generic [ref=e10]:
+      - generic [ref=e11]:
+        - generic [ref=e12]:
+          - link [ref=e13] [cursor=pointer]:
+            - /url: "#"
+            - img [ref=e15]
+          - link "PW-test" [ref=e23] [cursor=pointer]:
+            - /url: "#"
+        - button "Light" [ref=e25] [cursor=pointer]:
+          - generic [ref=e26]: Light
+          - img [ref=e28]
+      - generic [ref=e34]:
+        - button [ref=e37] [cursor=pointer]:
+          - img [ref=e39]
+        - link [ref=e45] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e47]
+        - link [ref=e53] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e55]
+  - generic [ref=e64]:
+    - list [ref=e69]:
+      - listitem [ref=e70]:
+        - link "IoT Dashboard" [ref=e71] [cursor=pointer]:
+          - /url: /pages/iot-dashboard
+          - img [ref=e73]
+      - listitem:
+        - generic: FEATURES
+      - listitem [ref=e78]:
+        - link "Forms" [expanded] [ref=e79] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e81]
+      - listitem [ref=e87]:
+        - link "Modal & Overlays" [ref=e88] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e90]
+        - list:
+          - listitem [ref=e97]:
+            - link "Dialog" [ref=e98] [cursor=pointer]:
+              - /url: /pages/modal-overlays/dialog
+              - generic: Dialog
+          - listitem [ref=e99]:
+            - link "Window" [ref=e100] [cursor=pointer]:
+              - /url: /pages/modal-overlays/window
+              - generic: Window
+          - listitem [ref=e101]:
+            - link "Popover" [ref=e102] [cursor=pointer]:
+              - /url: /pages/modal-overlays/popover
+              - generic: Popover
+          - listitem [ref=e103]:
+            - link "Toastr" [ref=e104] [cursor=pointer]:
+              - /url: /pages/modal-overlays/toastr
+              - generic: Toastr
+          - listitem [ref=e105]:
+            - link "Tooltip" [ref=e106] [cursor=pointer]:
+              - /url: /pages/modal-overlays/tooltip
+              - generic: Tooltip
+      - listitem [ref=e107]:
+        - link "Extra Components" [ref=e108] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e110]
+        - list:
+          - listitem [ref=e118]:
+            - link "Calendar" [ref=e119] [cursor=pointer]:
+              - /url: /pages/extra-components/calendar
+              - generic: Calendar
+      - listitem [ref=e120]:
+        - link "Charts" [ref=e121] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e123]
+        - list:
+          - listitem [ref=e129]:
+            - link "Echarts" [ref=e130] [cursor=pointer]:
+              - /url: /pages/charts/echarts
+              - generic: Echarts
+      - listitem [ref=e131]:
+        - link "Tables & Data" [ref=e132] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e134]
+        - list:
+          - listitem [ref=e142]:
+            - link "Smart Table" [ref=e143] [cursor=pointer]:
+              - /url: /pages/tables/smart-table
+              - generic: Smart Table
+          - listitem [ref=e144]:
+            - link "Tree Grid" [ref=e145] [cursor=pointer]:
+              - /url: /pages/tables/tree-grid
+              - generic: Tree Grid
+      - listitem [ref=e146]:
+        - link "Auth" [ref=e147] [cursor=pointer]:
+          - /url: "#"
+          - img [ref=e149]
+        - list:
+          - listitem [ref=e155]:
+            - link "Login" [ref=e156] [cursor=pointer]:
+              - /url: /auth/login
+              - generic: Login
+          - listitem [ref=e157]:
+            - link "Register" [ref=e158] [cursor=pointer]:
+              - /url: /auth/register
+              - generic: Register
+          - listitem [ref=e159]:
+            - link "Request Password" [ref=e160] [cursor=pointer]:
+              - /url: /auth/request-password
+              - generic: Request Password
+          - listitem [ref=e161]:
+            - link "Reset Password" [ref=e162] [cursor=pointer]:
+              - /url: /auth/reset-password
+              - generic: Reset Password
+    - generic [ref=e163]:
+      - generic [ref=e167]:
+        - generic [ref=e170]:
+          - generic [ref=e171]: Inline form
+          - generic [ref=e173]:
+            - textbox "Jane Doe" [ref=e174]
+            - textbox "Email" [ref=e175]
+            - generic [ref=e177]:
+              - checkbox "Remember me" [ref=e178]
+              - generic [ref=e180]: Remember me
+            - button "Submit" [ref=e181] [cursor=pointer]
+        - generic [ref=e182]:
+          - generic [ref=e183]:
+            - generic [ref=e184]:
+              - generic [ref=e185]: Using the Grid
+              - generic [ref=e187]:
+                - generic [ref=e188]:
+                  - generic [ref=e189]: Email
+                  - textbox "Email" [ref=e191]
+                - generic [ref=e192]:
+                  - generic [ref=e193]: Password
+                  - textbox "Password" [ref=e195]
+                - generic [ref=e196]:
+                  - generic [ref=e197]: Radios
+                  - generic [ref=e199]:
+                    - generic [ref=e201]:
+                      - radio "Option 1" [ref=e202]
+                      - generic [ref=e205]: Option 1
+                    - generic [ref=e207]:
+                      - radio "Option 2" [ref=e208]
+                      - generic [ref=e211]: Option 2
+                    - generic [ref=e213]:
+                      - radio "Disabled Option" [checked] [disabled] [ref=e214]
+                      - generic [ref=e217]: Disabled Option
+                - button "Sign in" [ref=e220] [cursor=pointer]
+            - generic [ref=e221]:
+              - generic [ref=e222]: Form without labels
+              - generic [ref=e224]:
+                - textbox "Recipients" [ref=e226]
+                - textbox "Subject" [ref=e228]
+                - textbox "Message" [ref=e230]
+                - button "Send" [ref=e231] [cursor=pointer]
+          - generic [ref=e232]:
+            - generic [ref=e233]:
+              - generic [ref=e234]: Basic form
+              - generic [ref=e236]:
+                - generic [ref=e237]:
+                  - generic [ref=e238]: Email address
+                  - textbox "Email address" [ref=e239]:
+                    - /placeholder: Email
+                - generic [ref=e240]:
+                  - generic [ref=e241]: Password
+                  - textbox "Password" [ref=e242]
+                - generic [ref=e245]:
+                  - checkbox "Check me out" [ref=e246]
+                  - generic [ref=e248]: Check me out
+                - button "Submit" [ref=e249] [cursor=pointer]
+            - generic [ref=e250]:
+              - generic [ref=e251]: Block form
+              - generic [ref=e252]:
+                - generic [ref=e253]:
+                  - generic [ref=e255]:
+                    - generic [ref=e256]: First Name
+                    - textbox "First Name" [ref=e257]
+                  - generic [ref=e259]:
+                    - generic [ref=e260]: Last Name
+                    - textbox "Last Name" [ref=e261]
+                - generic [ref=e262]:
+                  - generic [ref=e264]:
+                    - generic [ref=e265]: Email
+                    - textbox "Email" [ref=e266]
+                  - generic [ref=e268]:
+                    - generic [ref=e269]: Website
+                    - textbox "Website" [ref=e270]
+                - button "Submit" [ref=e271] [cursor=pointer]
+        - generic [ref=e274]:
+          - generic [ref=e275]: Horizontal form
+          - generic [ref=e277]:
+            - generic [ref=e278]:
+              - generic [ref=e279]: Email
+              - textbox "Email" [ref=e281]
+            - generic [ref=e282]:
+              - generic [ref=e283]: Password
+              - textbox "Password" [ref=e285]
+            - generic [ref=e290]:
+              - checkbox "Remember me" [ref=e291]
+              - generic [ref=e293]: Remember me
+            - button "Sign in" [ref=e296] [cursor=pointer]
+      - navigation [ref=e298]:
+        - generic [ref=e299]:
+          - generic [ref=e300]:
+            - text: Created with ♥ by
+            - link "Akveo" [ref=e302] [cursor=pointer]:
+              - /url: https://akveo.page.link/8V2f
+            - text: "2019"
+          - generic [ref=e303]:
+            - link "" [ref=e304] [cursor=pointer]:
+              - /url: "#"
+            - link "" [ref=e305] [cursor=pointer]:
+              - /url: "#"
+            - link "" [ref=e306] [cursor=pointer]:
+              - /url: "#"
+            - link "" [ref=e307] [cursor=pointer]:
+              - /url: "#"

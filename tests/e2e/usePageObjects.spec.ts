@@ -3,7 +3,7 @@ import { FormLayoutPage } from "../Page-Objects/form-layoutPage";
 import { NavigationPage } from "../Page-Objects/navigationPage";
 
 test.beforeEach(async ({ page }) => {
-  page.goto("http://localhost:4200/pages/iot-dashboard");
+  await page.goto("http://localhost:4300/pages/iot-dashboard");
 });
 
 test("parameterized method", async ({ page }) => {
